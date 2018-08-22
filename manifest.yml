@@ -1,0 +1,15 @@
+---
+applications:
+- name: roster-green
+  memory: 750M
+  buildpack: java_buildpack
+  instances: 1
+  random-route: true
+  path: C:/cf/roster.jar
+  services:
+  - roster-db
+  env:
+    ROSTER_A: a
+    ROSTER_B: b
+    ROSTER_C: c
+    APP_VERSION: green
